@@ -14,8 +14,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 80%;
     padding: 20px;
+    overflow: hidden;
 }
 
 .logo {
@@ -36,27 +37,22 @@ header {
 
 .main-section {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-.box-content{
-    align-content: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .box {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
+    background-color: #000;
+    flex: 1;
+    margin: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    padding: 15px;
     text-align: center;
+    transition: transform 0.3s ease-in-out;
 }
 
-.button{
-    width: 300px;
-    text-align: center;
-    
+.box:hover {
+    transform: scale(1.5);
 }
 
 .technologies {
@@ -64,35 +60,37 @@ header {
     justify-content: flex-end;
     padding: 20px;
     overflow: hidden;
-  }
-  
-  .technology-container {
+    overflow: hidden;
+}
+
+.technology-container {
     display: flex;
     position: relative;
     width: 200%;
     animation: scroll 30s linear infinite;
-  }
-  
-  .technology {
+}
+
+.technology {
     width: 100px;
     margin-right: 20px;
     text-align: center;
     transition: transform 0.5s ease;
-  }
-  
-  .technology img {
+}
+
+.technology img {
     width: 100%;
     max-width: 100px;
-  }
-  
-  @keyframes scroll {
+}
+
+@keyframes scroll {
     0% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
+
     100% {
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
-  }
+}
 
 
 .developers-section {
@@ -100,6 +98,7 @@ header {
     justify-content: space-around;
     padding: 20px;
     gap: 20px;
+    overflow: hidden;
 }
 
 .dev-box {
