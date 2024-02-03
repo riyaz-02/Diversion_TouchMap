@@ -19,10 +19,11 @@ header {
     overflow: hidden;
 }
 
-.logo {
-    width: 100px;
-    height: 100px;
-    margin-right: 20px;
+#logo1{
+    width: 20%;
+    height: 25%;
+    margin-left: 10%;
+
 }
 
 .nav-links {
