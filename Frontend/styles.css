@@ -92,6 +92,11 @@ header {
     object-fit: fill;
 }
 
+#technology-logo{
+    height: 150%;
+    width: 60%;
+}
+
 @keyframes scroll {
     0% {
         transform: translateX(0);
