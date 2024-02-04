@@ -104,52 +104,46 @@ body {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
-.technology-container {
-    position: relative;
-    width: 10%;
-    height: 10%;
-    overflow: hidden;
-  }
-  
-  .technology-logo {
+#technologies {
+    height: 10px;
+    width: 60%;
     display: flex;
-    top: 50%;
-    transform: translateY(-50%);
-    animation: move 10s linear infinite;
-  }
-  
-  .technology-logo:nth-child(1) {
-    animation-delay: 0s;
-  }
-  
-  .technology-logo:nth-child(2) {
-    animation-delay: 2s;
-  }
-  
-  .technology-logo:nth-child(3) {
-    animation-delay: 4s;
-  }
-  
-  .technology-logo:nth-child(4) {
-    animation-delay: 6s;
-  }
-  
-  .technology-logo:nth-child(5) {
-    animation-delay: 8s;
-  }
-  
-  .technology-logo:nth-child(6) {
-    animation-delay: 10s;
-  }
-  
-  @keyframes move {
+    justify-content: flex-end;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.technology-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 200%;
+    animation: scroll 30s linear infinite;
+    overflow: hidden;
+}
+
+.technology {
+    width: 100px;
+    margin-right: 20px;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.technology img {
+    width: 50%;
+    max-width: 100px;
+}
+
+@keyframes scroll {
     0% {
-      left: -50%;
+        transform: translateX(0);
     }
+
     100% {
-      left: 150%;
+        transform: translateX(-100%);
     }
-  }
+}
+
 
 
 .developers-section {
