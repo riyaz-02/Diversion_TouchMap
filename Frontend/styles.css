@@ -104,31 +104,50 @@ body {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
-.marquee {
-    height: 800px; /* adjust the height to fit the images */
-    width: 200px;
+.technology-container {
+    position: relative;
+    width: 10%;
+    height: 10%;
     overflow: hidden;
-    border: 1px solid black;
-    box-sizing: border-box;
   }
   
-  .marquee-content {
+  .technology-logo {
     display: flex;
-    height: 100%;
-    animation: marquee 10s linear infinite;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: move 10s linear infinite;
   }
   
-  .marquee-content img {
-    height: 100%;
-    margin: 0 10px; /* adjust the margin to add space between the images */
+  .technology-logo:nth-child(1) {
+    animation-delay: 0s;
   }
   
-  @keyframes marquee {
+  .technology-logo:nth-child(2) {
+    animation-delay: 2s;
+  }
+  
+  .technology-logo:nth-child(3) {
+    animation-delay: 4s;
+  }
+  
+  .technology-logo:nth-child(4) {
+    animation-delay: 6s;
+  }
+  
+  .technology-logo:nth-child(5) {
+    animation-delay: 8s;
+  }
+  
+  .technology-logo:nth-child(6) {
+    animation-delay: 10s;
+  }
+  
+  @keyframes move {
     0% {
-      transform: translateX(0);
+      left: -50%;
     }
     100% {
-      transform: translateX(-100%);
+      left: 150%;
     }
   }
 

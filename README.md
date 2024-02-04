@@ -21,12 +21,11 @@ Touch Map: an interactive educational tool revolutionizing geography exploration
 ## Technology Stack 👨‍💻
 - Python
 - OpenCV
-- Flask
+- Numpy
+- pickle
 - HTML, CSS, JavaScript
-- Touchscreen Interface
 - Frontend Libraries (e.g., jQuery, Bootstrap)
 - Version Control (e.g., Git)
-- Testing Frameworks (e.g., pytest)
 
 ## Conclusion 🔥
 Touch Map revolutionizes geography education by offering an interactive and immersive learning experience. By combining physical interaction with digital technology, Touch Map bridges the gap between traditional learning methods and modern educational tools. Start exploring the world with Touch Map today!
