@@ -39,10 +39,10 @@ detector = HandDetector(staticMode=False,
                         detectionCon=0.5,
                         minTrackCon=0.5)
 
-questions = [["which country has the largest area?", "Russia"],
-             ["which country has the largest population?", "China"],
-             ["which country is a continent?", "Australia"],
-             ["which country has the largest area?", "Russia"],
+questions = [["1/4.Which country has the largest area?", "Russia"],
+             ["2/4.Which country has the largest population?", "India"],
+             ["3/4.Which country is a continent?", "Australia"],
+             ["4/4.Shanghai is the capital of which country?", "China"],
              ]
 
 selected_country = None
