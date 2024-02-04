@@ -25,8 +25,8 @@ def mousePoints(event, x, y, flags, params):
 def warp_image(img, points, size=[1920, 1080]):
     pts1 = np.float32(points)
     pts2 = np.float32([[0, 0], [size[0], 0], [0, size[1]], [size[0], size[1]]])
-    matrix = cv2.getPerspectiveTransform(pts1, pts2)  # Calculate perspective transformation matrix
-    imgOutput = cv2.warpPerspective(img, matrix, (size[0], size[1]))  # Warp the image
+    matrix = cv2.getPerspectiveTransform(pts1, pts2)
+    imgOutput = cv2.warpPerspective(img, matrix, (size[0], size[1]))
     return imgOutput, matrix
 
 
